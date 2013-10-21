@@ -1,1 +1,6 @@
 Overview for Week 3
+
+
+What is Machine Learning
+What is Supervised and Unsupervised Learning
+What is Re-inforcment Learning
