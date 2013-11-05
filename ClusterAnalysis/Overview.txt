@@ -1,0 +1,5 @@
+Week 1 Overview
+
+1) Data Science
+2) Machine Learning and Data Mining
+3) Statistical Data Analysis

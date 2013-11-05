@@ -1,0 +1,12 @@
+Missing Data
+
+Missing At Random
+Missing Completely At Random
+Missing Not At Random
+
+\section{Missing Data}
+
+\section{What is multiple imputation?}
+
+Imputation, the practice of 'filling in' missing data with plausible values, is an attractive approach to analyzing incomplete data. It apparently solves the missing-data problem at the beginning of the analysis. However, a naive or unprincipled imputation method may create more problems than it solves, distorting estimates, standard errors and hypothesis tests, as documented by Little and Rubin (1987) and others.
+

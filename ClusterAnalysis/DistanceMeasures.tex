@@ -1,0 +1,73 @@
+%--------------------------------------------------------------------------------%
+\subsection{Distance measures}
+Distance can be measured in a variety of ways. There are distances that are Euclidean (can be measured with a ruler) and there are other distances based on similarity. For example, in terms of
+geographical distance (i.e. Euclidean distance) Perth, Australia is closer to Jakarta, Indonesia, than it is to Sydney, Australia.
+
+However, if distance is measured in terms of the cities characteristics, Perth is closer to Sydney (e.g. both on a big river estuary, straddling both sides of the river, with surfing beaches, and both English speaking, etc). A number of distance measures are available within SPSS. The \textbf{\textit{squared Euclidean distance}} is the most widely used measure.
+
+%--------------------------------------------------------------------------------%
+\subsection{Squared Euclidean distance}
+
+The most straightforward and generally accepted way of computing distances between objects in a multi-dimensional space is to compute Euclidean distances, an extension of Pythagoras's theorem.
+If we had a two- or three-dimensional space this measure is the actual geometric distance between objects in the space (i.e. as if measured with a ruler).
+
+In a univariate example, the Euclidean distance between two values is the arithmetic difference, i.e. \textbf{\textit{value1 - value2}}. In the bivariate case, the minimum distance is the hypotenuse of a triangle formed from the points, as in Pythagoras's theorem.
+
+Although difficult to visualize, an extension of the Pythagoras's theorem will give the distance between two points in n-dimensional space. The squared Euclidean distance is used more often than the simple Euclidean distance in order to place progressively greater weight on objects that are further apart. Euclidean (and squared Euclidean) distances are usually computed from raw data, and not from transformed data, e.g. standardized data.
+%http://www.econ.upf.edu/~michael/stanford/maeb4.pdf
+%http://stn.spotfire.com/spotfire_client_help/hc/hc_distance_measures_overview.htm
+\newpage
+\section{Euclidean Distance}
+The Euclidean distance between two points, x and y, with $k$ dimensions is calculated as:
+\[ \sqrt{ \sum^{k}_{j=1} ( x_j - y_j)^2 } \]
+The Euclidean distance is always greater than or equal to zero. The measurement would be zero for identical points and high for points that show little similarity.
+%--------------------------------------------------------------------------------------%
+\subsection{Example}
+Compute the Euclidean Distance between the following points:
+$X = \{1,5,4,3\}$ and $Y = \{2,1,8,7\}$
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+  \hline
+$x_j$	&	$y_j$	&   $x_j - y_j$	&	$(x_j - y_j)^2$	\\ \hline
+1	&	2	&	-1	&	1	\\
+5	&	1	&	4	&	16	\\
+4	&	8	&	-4	&	16	\\
+3	&	7	&	-4	&	16	\\ \hline
+	&		&		&	49	\\ \hline
+\end{tabular}
+\end{center}
+The Euclidean Distance between the two points is $\sqrt{49}$ i.e. 7.
+%--------------------------------------------------------------------------------------%
+\subsection{Squared Euclidean Distance}
+The Squared Euclidean distance between two points, x and y, with $k$ dimensions is calculated as:
+\[ \sum^{k}_{j=1} ( x_j - y_j)^2  \]
+The Squared Euclidean distance may be preferred to the Euclidean distance as it is slightly less computational complex, without loss of any information.
+%--------------------------------------------------------------------------------------%
+\newpage
+\section{Manhattan (City Block) Distance}
+The City block distance between two points, x and y, with $k$ dimensions is calculated as:
+\[ \sum^{k}_{j=1} | x_j - y_j |  \]
+
+The City block distance is always greater than or equal to zero. The measurement would be zero for identical points and high for points that show little similarity.
+
+\subsection{Example}
+Compute the Manhattan Distance between the following points: 
+$X = \{1,3,4,2\}$ and $Y = \{5,2,5,2\}$
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+  \hline
+$x_j$	&	$y_j$	&   $x_j - y_j$	&	$| x_j - y_j |$	\\ \hline
+1	&	5	&	-4	&	4	\\
+3	&	2	&	1	&	1	\\
+4	&	5	&	-1	&	1	\\
+2	&	2	&	0	&	0	\\ \hline
+& & & 6 \\
+  \hline
+\end{tabular}
+\end{center}
+The Manhattan Distance between the two points is 6.
+
+%--------------------------------------------------------------------------------%
