@@ -1,0 +1,7 @@
+\subsection{Sparsity and density}
+Sparsity and density are terms used to describe the percentage of cells in a database table that are not populated and populated, respectively. The sum of the sparsity and density should equal $100\%$.
+
+A table that is $10\%$ dense has $10\%$ of its cells populated with non-zero values. It is therefore $90\%$ sparse  meaning that $90\%$ of its cells are either not filled with data or are zeros.
+
+Because a processor adds up the zeros, sparcity can negatively impact processing time. In a multidimensional database sparsity can be avoided by linking cubes. Instead of creating a sparse cube for data that is not fully available, a separate but linked cube will ensure
+the data in the cubes remains consistent without slowing down processing.
