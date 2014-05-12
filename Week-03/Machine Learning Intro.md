@@ -5,7 +5,7 @@ Machine Learning
 - What is Supervised and Unsupervised Learning
 - What is Re-inforcment Learning
 
-<hr?
+<hr>
 
 ### What is Machine Learning?
 
