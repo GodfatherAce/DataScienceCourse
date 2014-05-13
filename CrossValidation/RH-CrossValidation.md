@@ -2,7 +2,7 @@ Cross-​​validation is pri­mar­ily a way of mea­sur­ing the pre­dic­tiv
 
 One way to mea­sure the pre­dic­tive abil­ity of a model is to test it on a set of data not used in esti­ma­tion. Data min­ers call this a “test set” and the data used for esti­ma­tion is the “train­ing set”. For exam­ple, the pre­dic­tive accu­racy of a model can be mea­sured by the mean squared error on the test set. This will gen­er­ally be larger than the MSE on the train­ing set because the test data were not used for estimation.
 
-How­ever, there is often not enough data to allow some of it to be kept back for test­ing. A more sophis­ti­cated ver­sion of training/​​test sets is leave-​​one-​​out cross-​​​​validation (LOOCV) in which the accu­racy mea­sures are obtained as fol­lows. Sup­pose there are n inde­pen­dent obser­va­tions, y_1,\dots,y_n.
+How­ever, there is often not enough data to allow some of it to be kept back for test­ing. A more sophis­ti­cated ver­sion of training/​​test sets is **leave-​​one-​​out cross-​​​​validation (LOOCV)** in which the accu­racy mea­sures are obtained as fol­lows. Sup­pose there are n inde­pen­dent obser­va­tions, y_1,\dots,y_n.
 
 Let obser­va­tion i form the test set, and fit the model using the remain­ing data. Then com­pute the error (e_{i}^*=y_{i}-\hat{y}_{i}) for the omit­ted obser­va­tion. This is some­times called a “pre­dicted resid­ual” to dis­tin­guish it from an ordi­nary residual.
 Repeat step 1 for i=1,\dots,n.
@@ -11,6 +11,7 @@ This is a much more effi­cient use of the avail­able data, as you only omit on
 
 Other sta­tis­tics (e.g., the MAE) can be com­puted sim­i­larly. A related mea­sure is the PRESS sta­tis­tic (pre­dicted resid­ual sum of squares) equal to n\timesMSE.
 
+#### variations
 Vari­a­tions on cross-​​validation include leave-​​k-​​out cross-​​validation (in which k obser­va­tions are left out at each step) and k-​​fold cross-​​validation (where the orig­i­nal sam­ple is ran­domly par­ti­tioned into k sub­sam­ples and one is left out in each iter­a­tion). Another pop­u­lar vari­ant is the .632+bootstrap of Efron & Tib­shi­rani (1997) which has bet­ter prop­er­ties but is more com­pli­cated to implement.
 
 Min­i­miz­ing a CV sta­tis­tic is a use­ful way to do model selec­tion such as choos­ing vari­ables in a regres­sion or choos­ing the degrees of free­dom of a non­para­met­ric smoother. It is cer­tainly far bet­ter than pro­ce­dures based on sta­tis­ti­cal tests and pro­vides a nearly unbi­ased mea­sure of the true MSE on new observations.
