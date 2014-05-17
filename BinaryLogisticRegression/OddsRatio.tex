@@ -12,3 +12,16 @@ An odds ratio (OR) is a measure of association between an exposure and an outcom
 \subsection*{Odds ratios and logistic regression}
 When a logistic regression is calculated, the regression coefficient (b1) is the estimated increase in the log odds of the outcome per unit increase in the value of the exposure. In other words, the exponential function of the regression coefficient (eb1) is the odds ratio associated with a one-unit increase in the exposure.
 
+%---------------------------------------------------------------%
+\subsection{When is it used?}
+Odds ratios are used to compare the relative odds of the occurrence of the outcome of interest (e.g. disease or disorder), given exposure to the variable of interest (e.g. health characteristic, aspect of medical history). The odds ratio can also be used to determine whether a particular exposure is a risk factor for a particular outcome, and to compare the magnitude of various risk factors for that outcome.
+
+\begin{itemize}
+\item OR=1 Exposure does not affect odds of outcome
+\item OR>1 Exposure associated with higher odds of outcome
+\item OR<1 Exposure associated with lower odds of outcome
+\end{itemize}
+%---------------------------------------------------------------%
+
+\subsection{What about confidence intervals?}
+The 95\% confidence interval (CI) is used to estimate the precision of the OR. A large CI indicates a low level of precision of the OR, whereas a small CI indicates a higher precision of the OR. It is important to note however, that unlike the p value, the 95% CI does not report a measure’s statistical significance. In practice, the 95% CI is often used as a proxy for the presence of statistical significance if it does not overlap the null value (e.g. OR=1). Nevertheless, it would be inappropriate to interpret an OR with 95% CI that spans the null value as indicating evidence for lack of association between the exposure and outcome.
