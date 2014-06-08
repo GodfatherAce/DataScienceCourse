@@ -1,4 +1,4 @@
-Big Data analytics
+Big Data Analytics
 ==========================
 - Big data analytics is the process of examining large amounts of data of a variety of types (big data) to uncover hidden patterns, unknown correlations and other useful information. Such information can provide competitive advantages over rival organizations and result in business benefits, such as more effective marketing and increased revenue.
 
