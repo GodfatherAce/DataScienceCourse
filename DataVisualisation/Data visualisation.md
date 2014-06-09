@@ -7,7 +7,7 @@ different research processes in an understandable, clear and effective manner.
 <hr>
 
 
-01 . Dygraphs
+ 01 . Dygraphs
 
 
 Help visitors explore dense data sets with JavaScript library Dygraphs
@@ -29,3 +29,8 @@ If you're looking for a data viz tool with mapping, InstantAtlas is worth checki
 
 Timeline creates beautiful interactive visualizations
 Timeline is a fantastic widget which renders a beautiful interactive timeline that responds to the user's mouse, making it easy to create advanced timelines that convey a lot of information in a compressed space. Each element can be clicked to reveal more in-depth information, making this a great way to give a big-picture view while still providing full detail.
+
+
+<hr> 
+### References
+- http://www.creativebloq.com/design-tools/data-visualization-712402
