@@ -15,3 +15,20 @@ Decision tree induction is a typical inductive approach to learn knowledge on cl
 - Predefined classes (target attribute values): The categories to which examples are to be assigned must have been established beforehand (supervised data).
 - Discrete classes: A case does or does not belong to a particular class, and there must be more cases than classes.
  -Sufficient data: Usually hundreds or even thousands of training cases.
+
+<hr>
+### Strengths and Weakness of Decision Tree Methods
+
+The strengths of decision tree methods are:
+
+- Decision trees are able to generate understandable rules.
+- Decision trees perform classification without requiring much computation.
+- Decision trees are able to handle both continuous and categorical variables.
+- Decision trees provide a clear indication of which fields are most important for prediction or classification.
+
+The weaknesses of decision tree methods
+
+- Decision trees are less appropriate for estimation tasks where the goal is to predict the value of a continuous attribute.
+- Decision trees are prone to errors in classification problems with many class and relatively small number of training examples.
+- Decision tree can be computationally expensive to train. The process of growing a decision tree is computationally expensive. At each node, each candidate splitting field must be sorted before its best split can be found. In some algorithms, combinations of fields are used and a search must be made for optimal combining weights. Pruning algorithms can also be expensive since many candidate sub-trees must be formed and compared.
+- Decision trees do not treat well non-rectangular regions. Most decision-tree algorithms only examine a single field at a time. This leads to rectangular classification boxes that may not correspond well with the actual distribution of records in the decision space.
