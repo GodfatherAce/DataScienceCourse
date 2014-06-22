@@ -9,7 +9,10 @@ What is Big Data?
 
 - Big data analytics is often associated with cloud computing because the analysis of large data sets in real-time requires a framework like \textbf{\emph{MapReduce}} to distribute the work among tens, hundreds or even thousands of computers.
 
+<hr>
+Big Data is a term for technology and services that harness the explosion of data coming from a growing number of resources - including data collected from smartphones and social networks, instrumentation and atmospheric readings to surveillance cameras and sensors.
 
+Business analytics is the science of translating vast amounts of complex data into clear, manageable information in order to make sound decisions. The technique of business analytics borrows from a variety of fields, including: operations research, statistics, information systems, machine learning and computer science. 
 <hr>
 - **Volume**. Many factors contribute to the increase in data volume. Transaction-based data stored through the years. Unstructured data streaming in from social media. Increasing amounts of sensor and machine-to-machine data being collected. In the past, excessive data volume was a storage issue. But with decreasing storage costs, other issues emerge, including how to determine relevance within large data volumes and how to use analytics to create value from relevant data.
 
