@@ -6,7 +6,7 @@ The data mining process
 
  
 
-- The next step in the data mining process is exploration. This step usually involves gathering the required data from an information warehouse or collection entity. Then, mining experts typically prepare the raw data sets for analysis. This step usually consists of gathering, cleaning, organizing, and checking all of the data for errors.
+- The next step in the data mining process is ***exploration***. This step usually involves gathering the required data from an information warehouse or collection entity. Then, mining experts typically prepare the raw data sets for analysis. This step usually consists of gathering, cleaning, organizing, and checking all of the data for errors.
 
  
 #### Model Building
@@ -15,9 +15,9 @@ The data mining process
  
 
 - There are four main techniques that can be applied in the data mining process. 
-  - The first is classification, which arranges data into predefined groups or categories. 
-  - In the second technique, called clustering, researchers allow the computer to organize the data into groups, as it chooses. 
-  - A third data mining technique seeks associations between variables. 
+  - The first is ***classification***, which arranges data into predefined groups or categories. 
+  - In the second technique, called ***clustering***, researchers allow the computer to organize the data into groups, as it chooses. 
+  - A third data mining technique seeks ***associations*** between variables. 
   - The fourth typically looks for sequential patterns in the data that may be used to predict future trends.
 
  
