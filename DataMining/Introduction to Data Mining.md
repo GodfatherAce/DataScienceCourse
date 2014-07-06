@@ -1,0 +1,18 @@
+Introduction to Data Mining
+====================================
+
+### Broad and Narrow Definitions
+ 
+- Broad definition includes traditional statistical techniques
+- Narrow definition emphasizes automated and heuristic methods
+- Key concepts in Data Mining Include : data dredging , fishing expeditions
+- Key paper: Knowledge Discovery in Databases (Usama Fayyad)
+
+### What is Data Mining
+- First Workshop on Data Mining KDD was in 1995
+- Recently coined terms for confluence of ideas from statistics and computers science (Machine Learning and Database Methods) applied to 
+large databases in science, engineering and business
+- In a state of flux, many definitions, lots of debate about what it is and what it is not.
+- Terminology is not standard (e.g. bias classification, prediction, features (independent variables)
+target (dependent variables), case (explempar, row)
+- "Statistics at Scale and Speed (with Simplicity) - Darryl Pregibon
