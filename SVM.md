@@ -26,3 +26,10 @@ Another appealing feature of SVM classification is the sparseness of its represe
 
 The SVM learning algorithm is defined so that, in a typical case, the number of support vectors is small compared to the total number of training examples. This property allows the SVM to classify new examples efficiently, since the majority of the training examples can be safely ignored. In essence, the SVM focuses upon the small subset of examples that are critical to differentiating between class members and non-class members, throwing out the remaining examples. This is a crucial property when analyzing large data sets containing many uninformative patterns, as is the case in many data mining problems. SVMs effectively remove the uniformative patterns from the data set by assigning them weights of zero.
 
+
+<hr>
+### NEW Content - to be merger
+%---------------------------%
+\section{Support vector machines}
+
+Support vector machines use training samples to build a model that will classify information, usually visualized as a scatter plot with a wide space between categories. When new information is fed into the machine, it is plotted on the graph. The data are then classified based on which category the information falls closest to on the graph. This method works only when there are two options to choose from.
