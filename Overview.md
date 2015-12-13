@@ -1,35 +1,35 @@
 Overview
 
-Week 1
+#### Week 1
 What is Data Science
 
-Week 2
+#### Week 2
 
-Week 3
+#### Week 3
 Machine Learning - Theoretical
 Supervised and Unsupervised Learning
 Reinforcment Learning
 
-Week 4
+#### Week 4
 Classification
 Performance Measures
 
-Week 5
+#### Week 5
 Dimensionality Reduction
 Principal Component Analysis
 Factor Analysis
 
-Week 6
+#### Week 6
 Logistic Regression
 
-Week 7 
+#### Week 7 
 MANOVA
 
-Week 8
+#### Week 8
 Discriminant Analysis
 Logistic Regression
 
-Week 9 
+#### Week 9 
 Data Quality
 Cross Validation
 Missing Data
@@ -45,7 +45,7 @@ Factor Analysis
 ------------------------------------------------
 Principal Component Analysis
 ------------------------------------------------
-Cluster analysis. 
+#### Cluster analysis. 
 The statistical method of partitioning a sample intohomogeneous classes to produce an operational classification.
 Use average linkage and Squared Euclidean distance
 http://www.cs.uu.nl/docs/vakken/arm/SPSS/spss8.pdf
