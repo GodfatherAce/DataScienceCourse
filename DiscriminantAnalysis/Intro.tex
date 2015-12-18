@@ -8,29 +8,55 @@
 3) Wilk's Lambda
 \end{verbatim}
 
-\subsection{Discriminant analysis}
+%----------------------------------------------------%
+\subsection{What is Discriminant function analysis}
+\begin{itemize}
+\item It builds a predictive model for group membership
+\item The model is composed of a discriminant function based on linear combinations of predictor variables.
+\item Those predictor variables provide the best discrimination between groups.
+\end{itemize}
+%----------------------------------------------------%
+\subsection{Purpose of Discriminant analysis}
+\item to maximally separate the groups.
+\item to determine the most parsimonious way to separate groups
+\item to discard variables which are little related to group distinctions
+\end{itemize}
 
+%----------------------------------------------------%
+\subsection{Summary}
+We are interested in the relationship between a group of independent variables and one categorical variable. We would like to know how many dimensions we would need to express this relationship. Using this relationship, we can predict a classification based on the independent variables or assess how well the independent variables separate the categories in the classification.
 
-The major purpose of discriminant analysis is to predict membership in two or more mutually exclusive groups from a set of predictors, when there is no natural ordering on the groups. So we may ask whether we can predict whether people vote Labour or Conservative from a knowledge of their age, their class, attitudes, values etc etc.
-
-Discriminant analysis is just the inverse of a one-way MANOVA, the multivariate analysis of variance. The levels of the independent variable (or factor) for Manova become the categories of the dependent variable for discriminant analysis, and the dependent variables of the Manova become the predictors for discriminant analysis. In MANOVA we ask whether group membership produces reliable differences on a combination of dependent variables. If the answer to that question is 'yes' then clearly that combination of variables can be used to predict group membership. 
-
-Mathematically, MANOVA and discriminant analysis are the same; indeed, the SPSS MANOVA command can be used to print out the discriminant functions that are at the heart of discriminant analysis, though this is not usually the easiest way of obtaining them. These discriminant functions are the linear combinations of the standardised independent variables which yield the biggest mean differences between the groups. If the dependent variable is a dichotomy, there is one discriminant function; if there are k levels of the dependent variable, up to k-1 discriminant functions can be extracted, and we can test how many it is worth extracting. Successive discriminant functions are orthogonal to one another, like principal components, but they are not the same as the principal components you would obtain if you just did a principal components analysis on the independent variables, because they are constructed to maximise the differences between the values of the dependent variable.
-
-The commonest use of discriminant analysis is where there are just two categories in the dependent variable; but as we have seen, it can be used for multi-way categories (just as MANOVA can be used to test the significance of differences between several groups, not just two). This is an advantage over logistic regression, which is always described for the problem of a dichotomous dependent variable.
-
-You will encounter discriminant analysis fairly often in journals. But it is now being replaced with logistic regression, as this approach requires fewer assumptions in theory, is more statistically robust in practice, and is easier to use and understand than discriminant analysis. So we will concentrate on logistic regression.
-
-%----------------------------------------------------------------------------------------------------------------------------------%
-
-Discriminant function analysis is multivariate analysis of variance (MANOVA)
+%=====================================================================================%
+\subsection{Relationship to MANOVA}
+\begin{itemize}
+\item Discriminant function analysis is multivariate analysis of variance (MANOVA)
 reversed. In MANOVA, the independent variables are the groups and the
 dependent variables are the predictors. In DA, the independent variables are the
-predictors and the dependent variables are the groups. As previously
-mentioned, DA is usually used to predict membership in naturally occurring
+predictors and the dependent variables are the groups. 
+\item  DA is usually used to predict membership in naturally occurring
 groups. It answers the question: can a combination of variables be used to
 predict group membership? Usually, several variables are included in a study to
 see which ones contribute to the discrimination between groups.
+\item Discriminant analysis is just the inverse of a one-way MANOVA, the multivariate analysis of variance. The levels of the independent variable (or factor) for Manova become the categories of the dependent variable for discriminant analysis, and the dependent variables of the Manova become the predictors for discriminant analysis. In MANOVA we ask whether group membership produces reliable differences on a combination of dependent variables. If the answer to that question is 'yes' then clearly that combination of variables can be used to predict group membership. 
+\end{itemize}
+%===========================================================================%
+\subsection{Discriminant analysis}
+\begin{itemize}
+
+\item The major purpose of discriminant analysis is to predict membership in two or more mutually exclusive groups from a set of predictors, when there is no natural ordering on the groups. So we may ask whether we can predict whether people vote Labour or Conservative from a knowledge of their age, their class, attitudes, values etc etc.
+
+
+
+\item Mathematically, MANOVA and discriminant analysis are the same; indeed, the SPSS MANOVA command can be used to print out the discriminant functions that are at the heart of discriminant analysis, though this is not usually the easiest way of obtaining them. 
+\item These discriminant functions are the linear combinations of the standardised independent variables which yield the biggest mean differences between the groups. If the dependent variable is a dichotomy, there is one discriminant function; if there are k levels of the dependent variable, up to k-1 discriminant functions can be extracted, and we can test how many it is worth extracting. Successive discriminant functions are orthogonal to one another, like principal components, but they are not the same as the principal components you would obtain if you just did a principal components analysis on the independent variables, because they are constructed to maximise the differences between the values of the dependent variable.
+
+\item The commonest use of discriminant analysis is where there are just two categories in the dependent variable; but as we have seen, it can be used for multi-way categories (just as MANOVA can be used to test the significance of differences between several groups, not just two). This is an advantage over logistic regression, which is always described for the problem of a dichotomous dependent variable.
+
+\item You will encounter discriminant analysis fairly often in journals. But it is now being replaced with logistic regression, as this approach requires fewer assumptions in theory, is more statistically robust in practice, and is easier to use and understand than discriminant analysis. So we will concentrate on logistic regression.
+\end{itemize}
+%----------------------------------------------------------------------------------------------------------------------------------%
+
+
 
 %---------------------------------------------------------------------------------------%
 \subsection{Steps in Discriminant Analysis}
@@ -45,21 +71,24 @@ statistically significant, proceeds to see which of the variables have significa
 different means across the groups.
 
 %----------------------------------------------------------------------------------------------------------------------------------%
-
-Once group means are found to be statistically significant, classification of
+\begin{itemize}
+\item Once group means are found to be statistically significant, classification of
 variables is undertaken. DA automatically determines some optimal combination
 of variables so that the first function provides the most overall discrimination
 between groups, the second provides second most, and so on. Moreover, the
 functions will be independent or orthogonal, that is, their contributions to the
-discrimination between groups will not overlap. The first function picks up the
+discrimination between groups will not overlap. 
+\item The first function picks up the
 most variation; the second function picks up the greatest part of the unexplained
-variation, etc... Computationally, a canonical correlation analysis is performed
+variation, etc... 
+\item Computationally, a canonical correlation analysis is performed
 that will determine the successive functions and canonical roots. Classification is
 then possible from the canonical functions. Subjects are classified in the groups
-in which they had the highest classification scores. The maximum number of
+in which they had the highest classification scores. 
+\item The maximum number of
 discriminant functions will be equal to the degrees of freedom, or the number of
 variables in the analysis, whichever is smaller.
-
+\end{itemize}
 %---------------------------------------------------------------------------------------%
 \subsubsection{Standardized coefficients and the structure matrix}
 Discriminant functions are interpreted by means of standardized coefficients and
@@ -96,20 +125,6 @@ means for the significant discriminant functions are examined in order to
 determine between which groups the respective functions seem to discriminate.
 
 
-What is Discriminant function analysis
-\begin{itemize}
-\item It builds a predictive model for group membership
-\item The model is composed of a discriminant function based on linear combinations of predictor variables.
-\item Those predictor variables provide the best discrimination between groups.
-\end{itemize}
-
-Purpose of Discriminant analysis
-\item to maximally separate the groups.
-\item to determine the most parsimonious way to separate groups
-\item to discard variables which are little related to group distinctions
-\end{itemize}
-
-Summary: we are interested in the relationship between a group of independent variables and one categorical variable. We would like to know how many dimensions we would need to express this relationship. Using this relationship, we can predict a classification based on the independent variables or assess how well the independent variables separate the categories in the classification.
 
 It is similar to regression analysis
 
@@ -174,7 +189,9 @@ Assumptions(similar to those for linear regression)
 
 
 %---------------------------------------------------------------------------------------%
-\subsection{Discriminant Analysis :Comparison to logistic regression}
+\subsection{Discriminant Analysis : Comparison to logistic regression}
 
 Discriminant function analysis is very similar to logistic regression, and both can be used to answer the same research questions.[2] Logistic regression does not have as many assumptions and restrictions as discriminant analysis. However, when discriminant analysis’ assumptions are met, it is more powerful than logistic regression.[citation needed] Unlike logistic regression, discriminant analysis can be used with small sample sizes. It has been shown that when sample sizes are equal, and homogeneity of variance/covariance holds, discriminant analysis is more accurate.[3] With all this being considered, logistic regression is 
 the common choice nowadays, since the assumptions of discriminant analysis are rarely met.
+
+\end{document}
